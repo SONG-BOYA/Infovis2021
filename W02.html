@@ -7,10 +7,14 @@
 </head>
 <body>
 
+<p>Hello D3! A</p>
+<p>Hello D3! B</p>
+<p>Hello D3! C</p>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
 
-d3.select("body").append("span").text("Hello D3!");
+var p = d3.select("body").select("p");
+p.style("font-weight","bold");
 
 </script>
 
