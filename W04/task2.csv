@@ -1,11 +1,5 @@
-Country,Value,color
-United States,12394,red
-Russia,6148,red
-Germany (FRG),1653,red
-France,2162,red
-United Kingdom,1214,red
-China,1131,red
-Spain,814,red
-Netherlands,1167,red
-Italy,660,red
-Israel,1263,red
+x,y,width,height,coor
+10,10,100,20,red
+10,40,50,20,green
+10,70,80,20,blue
+10,100,30,20,yellow
