@@ -4,16 +4,5 @@ x,y,r
 70,80,10
 170,30,10
 150,70,10
-var svg = d3.select("body").append("svg");
-d3.csv("https://SONG-BOYA.github.io/Infovis2021/W04/data.csv",
 
-function(data){
-svg.selectAll("circle")
-.data(data)
-.enter()
-.append("circle")
-.attr("cx", function(d){ return d.x; })
-.attr("cy", function(d){ return d.y; })
-.attr("r", function(d){ return d.r; })
 
-} );
