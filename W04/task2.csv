@@ -1,4 +1,4 @@
-x,y,width,height,coor
+x,y,width,height,color
 10,10,100,20,red
 10,40,50,20,green
 10,70,80,20,blue
