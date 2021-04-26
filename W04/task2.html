@@ -18,7 +18,7 @@ svg.selectAll("rect")
 .append("rect")
 .text("name", function(d){ return d.name; })
 .attr("x", function(d){ return d.x; })
-.attr("y", function(d){ return d.y; })
+.attr("y", function(d){ return y(d.name); })
 .attr("width", function(d){ return d.width; })
 .attr("height", function(d){ return d.height; })
 .style("fill", function(d){ return d.color; });
