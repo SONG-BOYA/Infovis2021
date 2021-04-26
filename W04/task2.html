@@ -16,11 +16,11 @@ svg.selectAll("rect")
 .data(data)
 .enter()
 .append("rect")
-.attr("x", x(0) )
+//.attr("x", x(0) )
 .attr("y", function(d) { return y(d.Country); })
- .attr("width", function(d) { return x(d.Value); })
- .attr("height", y.bandwidth() )
-.style("fill", function(d){ return d.color; });
+.attr("width", function(d) { return x(d.Value); })
+.attr("height", y.bandwidth() )
+//.style("fill", function(d){ return d.color; });
 } );
 </script>
 
