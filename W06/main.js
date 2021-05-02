@@ -6,7 +6,7 @@ d3.csv("https://SONG-BOYA.github.io/Infovis2021/W06/data.csv")
             parent: '#drawing_region',
             width: 256,
             height: 256,
-            margin: {top:10, right:10, bottom:20, left:10}
+            margin: {top:10, right:10, bottom:20, left:20}
         };
 
         const scatter_plot = new ScatterPlot( config, data );
