@@ -49,7 +49,7 @@ class ScatterPlot {
             .range( [0, self.inner_height] );
 
         self.xaxis = d3.axisBottom( self.xscale )
-            .ticks(6);
+            .ticks(0);
 
         self.xaxis_group = self.chart.append('g')
             .attr('transform', `translate(0, ${self.inner_height})`);
@@ -58,7 +58,7 @@ class ScatterPlot {
             .ticks(6);
 
         self.yaxis_group = self.chart.append('g')
-            .attr('transform', `translate(0, ${self.inner_width})`);
+            .attr('transform', `translate( ${self.inner_width},0)`);
     }
 
     update() {
