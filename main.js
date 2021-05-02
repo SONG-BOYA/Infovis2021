@@ -9,17 +9,6 @@ console.log( error );
 });
  
 function ShowScatterPlot(data) {
-var svg = d3.select("body").append("svg");
-svg.selectAll("circle")
-.data(data)
-.enter()
-.append("circle")
-.attr("cx", d => d.x)
-.attr("cy", d => d.y)
-.attr("r", d => d.r);
-
-};
-
 const width = 256;
 const height = 256;
 var svg = d3.select("body").append("svg")
@@ -40,3 +29,5 @@ svg.selectAll("circle")
 .attr("cx", d => xscale(d.x))
 .attr("cy", d => yscale(d.y))
 .attr("r", d => d.r);
+};
+
