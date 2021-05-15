@@ -8,6 +8,7 @@ var data = [
 
 var width = 256;
 var height = 128;
+var margin = {top:10, right:10, bottom:20, left:60};
 
 var svg = d3.select('#drawing_region')
     .attr('width', width)
