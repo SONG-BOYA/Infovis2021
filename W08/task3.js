@@ -5,13 +5,7 @@ var data = [
     {label:'Doughnut', value:120},
     {label:'Egg', value:80}
 ];
-class PieChart {
-constructor() { ... }
-init() { ... }
-update() { ... }
-render() { ... }
-...
-}
+
 var width = 256;
 var height = 256;
 var radius = Math.min( width, height ) / 2;
