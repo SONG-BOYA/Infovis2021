@@ -21,3 +21,29 @@ svg.append('path')
     .attr('d', line(data))
     .attr('stroke', 'black')
     .attr('fill', 'none');
+
+// Initialize axis scales
+const xscale = d3.scaleLinear()
+      .domain([0, d3.max(data, d => d.x)])
+      .range([0, inner_width]);
+
+const yscale = d3.scaleBand()
+      .domain(data.map(d => d.y))
+      .range([0, inner_height])
+      .paddingInner(0.1);
+
+// Initialize axes
+const xaxis = d3.axisBottom( xscale )
+      .ticks(5)
+      .tickSizeOuter(0);
+
+const yaxis = d3.axisLeft( yscale )
+      .tickSizeOuter(0);
+
+// Draw the axis
+const xaxis_group = chart5.append('g')
+      .attr('transform', `translate(0, ${inner_height})`)
+      .call( xaxis );
+
+const yaxis_group = chart.append('g')
+      .call( yaxis );
