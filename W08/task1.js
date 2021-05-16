@@ -31,7 +31,7 @@ const yscale = d3.scaleBand()
       .domain(data.map(d => d.label))
       .range([0, inner_height])
       .paddingInner(0.1);
-class ScatterPlot {
+class BarChart {
 
     constructor(  data ) {
         
