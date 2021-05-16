@@ -5,7 +5,12 @@ var data = [
     {x:150, y:30},
     {x:200, y:50}
 ];
-
+ var config = {
+            parent: '#drawing_region',
+            width: 256,
+            height: 256,
+            margin: {top:10, right:10, bottom:20, left:20}
+        };
 var width = 256;
 var height = 128;
 var margin = {top:10, right:10, bottom:20, left:60};
@@ -29,11 +34,11 @@ svg.append('path')
 
 // Initialize axis scales
 const xscale = d3.scaleLinear()
-      .domain([0, d3.max(data, d => d.x)])
+      
       .range([0, inner_width]);
 
 const yscale = d3.scaleBand()
-      .domain(data.map(d => d.y))
+      
       .range([0, inner_height])
       .paddingInner(0.1);
 class LineChart {
@@ -44,6 +49,7 @@ class LineChart {
         
     }
 }
+const scatter_plot = new  LineChart (  data );
 // Initialize axes
 const xaxis = d3.axisBottom( xscale )
       .ticks(5)
