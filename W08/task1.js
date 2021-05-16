@@ -31,7 +31,14 @@ const yscale = d3.scaleBand()
       .domain(data.map(d => d.label))
       .range([0, inner_height])
       .paddingInner(0.1);
+class ScatterPlot {
 
+    constructor(  data ) {
+        
+        this.data = data;
+        
+    }
+}
 // Initialize axes
 const xaxis = d3.axisBottom( xscale )
       .ticks(5)
