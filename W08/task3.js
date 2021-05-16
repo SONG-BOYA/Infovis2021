@@ -18,8 +18,7 @@ var svg = d3.select('#drawing_region')
 
 const pie = d3.pie()
       .value( d => d.value );
-      .domain(data.map(d => d.label))
-
+      
 const arc = d3.arc()
       .innerRadius(radius/2)
       .outerRadius(radius);
