@@ -9,6 +9,8 @@ var data = [
 var width = 256;
 var height = 128;
 var margin = {top:10, right:10, bottom:20, left:60};
+const inner_width = width - margin.left - margin.right;
+const inner_height = height - margin.top - margin.bottom;
 
 var svg = d3.select('#drawing_region')
     .attr('width', width)
@@ -32,7 +34,14 @@ const yscale = d3.scaleBand()
       .domain(data.map(d => d.y))
       .range([0, inner_height])
       .paddingInner(0.1);
+class LineChart {
 
+    constructor(  data ) {
+        
+        this.data = data;
+        
+    }
+}
 // Initialize axes
 const xaxis = d3.axisBottom( xscale )
       .ticks(5)
