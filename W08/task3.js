@@ -22,7 +22,14 @@ const pie = d3.pie()
 const arc = d3.arc()
       .innerRadius(radius/2)
       .outerRadius(radius);
+class PieChart {
 
+    constructor(  data ) {
+        
+        this.data = data;
+        
+    }
+}
 svg.selectAll('pie')
     .data( pie(data) )
     .enter()
