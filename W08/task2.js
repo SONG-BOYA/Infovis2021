@@ -13,7 +13,7 @@ var data = [
         };
 var width = 256;
 var height = 128;
-var margin = {top:10, right:0, bottom:20, left:60};
+var margin = {top:10, right:0, bottom:20, left:0};
 const inner_width = width - margin.left - margin.right;
 const inner_height = height - margin.top - margin.bottom;
 
