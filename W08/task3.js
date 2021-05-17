@@ -15,7 +15,9 @@ var svg = d3.select('#drawing_region')
     .attr('height', height)
     .append('g')
     .attr('transform', `translate(${width/2}, ${height/2})`);
-
+var color = d3.scaleOrdinal()
+  .domain(data)
+  .range(d3.schemeSet2);
 const pie = d3.pie()
       .value( d => d.value )
       
@@ -35,6 +37,7 @@ svg.selectAll('pie')
     .data( pie(data) )
     .enter()
     .append('path')
+    .append('text')
     .text(d => d.lable) 
     .attr('d', arc)
     .attr('fill', 'black')
