@@ -33,8 +33,11 @@ const area = d3.area()
 svg.append('path')
     .attr('d', line(data))
     .attr('stroke', 'black')
-    .attr('fill', 'black');
-
+    .attr('fill', 'none');
+svg.append('path')
+.attr('d', area(data))
+.attr('stroke', 'black')
+.attr('fill', 'black');
 // Initialize axis scales
 const xscale = d3.scaleLinear()
       
