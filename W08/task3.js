@@ -38,6 +38,6 @@ svg.selectAll('pie')
     .append('text')
     .text(d => d.lable) 
     .attr('d', arc)
-    .attr('fill', 'blue')
+    .attr('fill', 'black')
     .attr('stroke', 'white')
     .style('stroke-width', '2px');
