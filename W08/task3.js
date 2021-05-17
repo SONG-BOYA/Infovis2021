@@ -18,7 +18,7 @@ var svg = d3.select('#drawing_region')
 
 const pie = d3.pie()
       .value( d => d.value )
-      .domain(data.map(d => d.lable));
+      
       
 const arc = d3.arc()
       .innerRadius(radius/2)
@@ -35,6 +35,7 @@ svg.selectAll('pie')
     .data( pie(data) )
     .enter()
     .append('path')
+    .text(d => d.lable) 
     .attr('d', arc)
     .attr('fill', 'black')
     .attr('stroke', 'white')
