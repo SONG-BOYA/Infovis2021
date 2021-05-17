@@ -27,9 +27,9 @@ const line = d3.line()
       .x( d => d.x )
       .y( d => d.y );
 const area = d3.area()
-.x( d => d.x )
-.y1( d => d.y )
-.y0( d3.max(data, d => d.y ) + 10 );
+       .x( d => d.x )
+       .y1( d => d.y )
+       .y0( d3.max(data, d => d.y ) + 10 );
 svg.append('path')
     .attr('d', line(data))
     .attr('stroke', 'black')
