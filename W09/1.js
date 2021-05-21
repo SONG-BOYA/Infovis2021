@@ -1,4 +1,4 @@
-d3.csv("https://SONG -BOYA.github.io/Infovis2021/W09/1.csv")
+d3.csv("https://SONG-BOYA.github.io/Infovis2021/W09/1.csv")
     .then( data => {
         data.forEach( d => { d.value = +d.value; });
 
