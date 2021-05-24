@@ -12,28 +12,7 @@ class BarChart {
         this.data = data;
         this.init();
     }
-var svg = d3.select('#drawing_region');
-update( self.data );
 
-function update(self.data) {
-    let padding = 10;
-    let height = 20;
-
-    svg.selectAll("rect")
-        .data(self.data)
-        .join("rect")
-        .transition().duration(1000)
-        .attr("x", padding)
-        .attr("y", (d,i) => padding + i * ( height + padding ))
-        .attr("width", d => d)
-        .attr("height", height);
-}
-
-d3.select('#reverse')
-    .on('click', d => {
-        data.reverse();
-        update(self.data);
-    });
     init() {
         let self = this;
 
@@ -124,4 +103,3 @@ d3.select('#reverse')
         self.yaxis_group.call(self.yaxis);
     }
 }
-
