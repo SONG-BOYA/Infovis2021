@@ -1,3 +1,4 @@
+var data = [100,50,80,20];
 
 var svg = d3.select('#drawing_region');
 
