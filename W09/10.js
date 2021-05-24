@@ -1,4 +1,10 @@
-var data = [100,50,80,20];
+var data = [
+    {x:20,y:20,r:10},
+    {x:100,y:50,r:10},
+    {x:70,y:80,r:10},
+    {x:170,y:30,r:10},
+    {x:150,y:70,r:10}];
+
 
 var svg = d3.select('#drawing_region');
 
