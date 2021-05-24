@@ -14,7 +14,7 @@ class ScatterPlot {
         this.init();
     }
 let circles = svg.selectAll('circle')
-    .data(data)
+    .data(self.data)
     .enter()
     .append('circle');
 
