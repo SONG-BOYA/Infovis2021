@@ -43,10 +43,10 @@ rect:hover {  fill:blue; }
 <script>
 function dashboard(id, fData){
     var barColor = 'steelblue';
-    function segColor(c){ return {low:"#807dba", mid:"#e08214",high:"#41ab5d"}[c]; }
+    function segColor(c){ return {2018:"#807dba", 2019:"#e08214",2020:"#41ab5d"}[c]; }
     
     // compute total for each state.
-    fData.forEach(function(d){d.total=d.freq.low+d.freq.mid+d.freq.high;});
+    fData.forEach(function(d){d.total=d.freq.2018+d.freq.2019+d.freq.2020;});
     
     // function to handle histogram.
     function histoGram(fD){
